@@ -7,7 +7,23 @@ require 'flight/autoload.php';
 
 
 Flight::route('/', function () {
-    echo 'hello world! HOME';
+    // Include the library
+    include 'Sparrow.php';
+
+    // Declare the class instance
+    $db = new Sparrow;
+
+    // Select a table
+    $db->from('user');
+
+    // Build a select query
+    $db->select();
+
+    // Display the SQL
+    echo $db->sql();
+
+
+    //echo 'hello world! HOME';
 });
 
 function mi_funcionklk()
@@ -43,7 +59,6 @@ function mi_funcionklk()
             {
                 return $this->name;
             }
-            
         }
 
         $apple = new Fruit();
@@ -115,3 +130,4 @@ Flight::start();
 
 
 //mi_funcionklk();
+#Request For Enhancement QA--check again entry exit criteria
