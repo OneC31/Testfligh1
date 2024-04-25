@@ -2,8 +2,15 @@
 
     class Saiyajin{
 
-        public string $nombre="Goku";
-        public int $nivel_pelea=1000;
+        public string $nombre;
+        public int $nivel_pelea;
+
+
+        public function __construct()
+        {
+            echo "Metodo constructor";
+             
+        }
 
 
         public function Saludar(){
@@ -16,3 +23,9 @@
 
         }
     }
+
+    $goku = new Saiyajin();
+    #var_dump($goku);
+    echo $goku->Saludar();
+
+    $vegueta= new Saiyajin();
