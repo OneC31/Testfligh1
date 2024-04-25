@@ -6,8 +6,10 @@
         public int $nivel_pelea;
 
 
-        public function __construct()
+        public function __construct($nombre,$nivel_pelea)
         {
+            $this->nombre= $nombre;
+            $this->nombre= $nivel_pelea;
             echo "Metodo constructor";
              
         }
@@ -24,8 +26,8 @@
         }
     }
 
-    $goku = new Saiyajin();
+    $goku = new Saiyajin("goku",1000);
     #var_dump($goku);
     echo $goku->Saludar();
 
-    $vegueta= new Saiyajin();
+    $vegueta= new Saiyajin("Vegueta",950);
