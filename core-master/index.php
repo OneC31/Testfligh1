@@ -40,7 +40,7 @@ function mi_funcionklk()
     </head>
 
     <body>
-        <h1>hehehhehehehhe</h1>
+        <h1>Testing POO</h1>
         <?php
 
         class Fruit
@@ -63,8 +63,8 @@ function mi_funcionklk()
 
         $apple = new Fruit();
         $banana = new Fruit();
-        $apple->set_name('Apple');
-        $banana->set_name('Banana');
+        $apple->set_name('test1');
+        $banana->set_name('TEST2');
 
         echo $apple->get_name();
         echo "<br>";
@@ -76,7 +76,7 @@ function mi_funcionklk()
     </html>
 <?php
 }
-
+#FORMULARIO
 function formulario()
 {
 ?>
